@@ -1,0 +1,18 @@
+{
+  "name": "YouTube 24/7 live stream radio",
+  "description": "A sample live stream radio app",
+  "repository": "https://github.com/foxtacles/youtube-live-radio",
+  "stack": "container",
+  "env": {
+    "YOUTUBE_KEY": {
+      "description": "The YouTube live stream key to be used. Can be found in the YouTube UI",
+      "required": true
+    }
+  },
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}
