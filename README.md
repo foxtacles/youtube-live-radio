@@ -2,11 +2,24 @@
 
 Have you ever come across a YouTube video that endlessly loops a playlist of music? This post outlines a way to launch such a live radio using `ffmpeg`, the swiss army knife when it comes to any kind of media streaming or transformation, and a simple Docker image. You can even host the entire setup for free on services like Heroku (using "free" dyno hours). More information can be found in [this blog post](https://blaubart.com/en/blog/how-to-set-up-a-24-7-live-stream-radio-on-youtube-for-free).
 
-# Deploy
+# Docker
+
+This service ready to docker-compose. 
+1. You need build service by command:
+```python
+docker build -t youtube-stream .
+```
+2. Change YOUTUBE_KEY in docker-compose.yaml
+3. And service up by:
+```python
+docker-compose up -d
+```
+# Cloud hostings
+## Deploy
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
-# Setup
+## Setup
 
 * Make sure you are allowed to create live streams on YouTube. 
 * Fork this repository, swap out the background image to your liking, and put all MP3 files to be played in the `mp3` folder. They will be shuffled and looped infinitely.

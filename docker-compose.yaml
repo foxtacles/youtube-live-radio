@@ -1,0 +1,8 @@
+version: "3.9"
+
+services:
+  youtube-service:
+    container_name: youtube-service
+    image: youtube-stream:latest
+    environment: 
+      YOUTUBE_KEY: YOUR-YOUTUBE_KEY
