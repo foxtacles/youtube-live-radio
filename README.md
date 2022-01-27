@@ -6,11 +6,14 @@ Have you ever come across a YouTube video that endlessly loops a playlist of mus
 
 This service ready to docker-compose. 
 1. You need build service by command:
+
 ```bash
+ d6410bbe760c67017bd53786566ed9937b11c087
 docker build -t youtube-stream .
 ```
 2. Change YOUTUBE_KEY in docker-compose.yaml
 3. And service up by:
+
 ```bash
 docker-compose up -d
 ```
