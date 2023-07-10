@@ -1,4 +1,7 @@
-FROM alpine:3
+FROM linuxserver/ffmpeg:latest AS
+FROM alpine:latest
+
+ENV FFMPEG_VERSION=4.0
 
 RUN apk add --no-cache bash ffmpeg
 
