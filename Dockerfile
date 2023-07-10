@@ -1,4 +1,3 @@
-FROM linuxserver/ffmpeg:latest AS
 FROM alpine:latest
 
 ENV FFMPEG_VERSION=4.0
